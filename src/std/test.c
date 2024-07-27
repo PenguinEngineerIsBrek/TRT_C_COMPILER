@@ -1,7 +1,7 @@
-#include "math.h"
 #include "stdio.h"
 #include "stdlib.h"
+#include "stddef.h"
 void _start(){
-	malloc(4096);
+	malloc(sizeof(size_t));
 	sysexit(0);
 }

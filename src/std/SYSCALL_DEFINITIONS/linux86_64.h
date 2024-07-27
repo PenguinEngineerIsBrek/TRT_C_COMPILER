@@ -3,6 +3,7 @@
 #define SYSREAD 0x00
 #define SYSWRITE 0x01
 #define SYSMMAP 0x09
+#define SYSMUNMAP 0x0B
 #define SYSBRK 0x0C
 #define SYSEXIT 0x3C
 #endif
