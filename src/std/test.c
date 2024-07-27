@@ -1,9 +1,7 @@
-
+#include "math.h"
 #include "stdio.h"
-#include <stdio.h>
-int main(){
-	char *str;
-	sysread(0, str, 6);
-       	syswrite(1, str, 6);
+#include "stdlib.h"
+void _start(){
+	malloc(4096);
 	sysexit(0);
 }

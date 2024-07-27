@@ -2,10 +2,7 @@
 #ifndef SYS_DEFS_LIN64
 #define SYS_DEFS_LIN64
 #include "stddef.h"
-#define SYSEXIT 60
-#define SYSWRITE 1
-#define SYSREAD 0
-
+#include "SYSCALL_DEFINITIONS/linux86_64.h"
 // SYSTEM CALLS
 void sysexit(int code){
 	asm volatile
@@ -30,6 +27,7 @@ void sysread(unsigned fd, char *var, size_t length){
 		"syscall"
 		:
 		:"a"(SYSREAD), "D"(fd), "S"(var), "d"(length)
+		:"memory"
 	);
 }
 void sysfread(){}
