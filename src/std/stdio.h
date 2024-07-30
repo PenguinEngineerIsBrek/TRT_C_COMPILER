@@ -13,7 +13,7 @@ void sysexit(int code){
 	);
 }
 
-void syswrite(unsigned fd, char  *buffer, size_t length){
+void syswrite(unsigned fd, char *buffer, size_t length){
 	asm volatile
 	(
 		"syscall"
