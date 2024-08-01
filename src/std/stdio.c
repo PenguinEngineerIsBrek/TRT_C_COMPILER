@@ -1,5 +1,4 @@
-#include "stddef.h"
-#include "SYSCALL_DEFINITIONS/linux86_64.h"
+#include "stdio.h"
 // SYSTEM CALLS
 void sysexit(int code){
         asm volatile

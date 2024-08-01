@@ -1,4 +1,4 @@
-#include "SYSCALL_DEFINITIONS/linux86_64.h"
+#include "unistd.h"
 void syscall(int number){
         asm volatile
         (

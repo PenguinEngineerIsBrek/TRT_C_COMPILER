@@ -1,9 +1,4 @@
-#include "stddef.h"
-#include "SYSCALL_DEFINITIONS/linux86_64.h"
-#include "unistd.h"
-#define EXIT_FAILURE 1
-#define EXIT_SUCCESS 0
-#define RAND_MAX 2147483647
+#include "stdlib.h"
 void *malloc(size_t size){
         void *addr;
         asm volatile
